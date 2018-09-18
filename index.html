@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Monitor</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="content">
+		<i id="menuButton" class="menuButton fas fa-2x fa-bars"></i>
+		<section id="home">
+			<div class="sectionMask">
+				<h1> MONITOR </h1>
+				<div class="mainPageNav">
+					<div id="navBar" class="navBar">
+						<div id="navLinkContainer" class="navLinkContainer visible mobile">
+							<a class="navLink" href="#home"><h4>Home</h4></a>
+							<a class="navLink" href="#band"><h4>Band</h4></a>
+							<a class="navLink" href="#liveShows"><h4>Performances</h4></a>
+							<a class="navLink" href="#press"><h4>Press</h4></a>
+							<a class="navLink" href="#listen"><h4>Listen</h4></a>
+						</div>
+					</div>
+					<div class="socialMediaBar">
+						<a href="https://open.spotify.com/artist/5OUfsZqqBlsVtWIzayDPF5?si=JSNK3Iu_QfWcU4xdL_husQ" target="_blank"><i class="fab fa-2x fa-spotify"></i></a>
+						<a href="https://www.facebook.com/monitorourband" target="_blank"><i class="fab fa-2x fa-facebook"></i></a>
+						<a href="https://www.instagram.com/monitorband/" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+						<a href="https://monitor.bandcamp.com/" target="_blank"><i class="fab fa-2x fa-bandcamp"></i></a>
+						<a href="https://soundcloud.com/monitortheband" target="_blank"><i class="fab fa-2x fa-soundcloud"></i></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="band">
+			<div id="bioContainer">
+				<h2>We’re just like you.</h2>
+				<br>
+				<h3>Monitor is a Seattle band comprised of Dave Raskin, Connor Smith and Jack McGrath.  </h3>
+				<br>
+				<p>
+					Monitor strives to create musical worlds that help to shed new light on the one big World we all live on. In 2016, Dave and Connor moved in together to write what would become Monitor's debut album, ‘Memorand’, and travelled to Brooklyn, NY to record it with Producer Kyle Joseph.  Raskin and Smith hoped to create a diverse palette of musical colors on ‘Memorand’, and when it released in 2017, critics believed that they succeeded, describing it as a “delicate” and “trippy odyssey.”
+					<br>
+					<br>
+					<b>Connor and Dave go way back:</b> all the way to the very first day of college, in fact, when Connor spotted a bass guitar through Dave's open doorway and asked about starting a band.  The two have been playing together in various proejects ever since.  <b>Enter Jack McGrath.</b> In early 2018, the duo sought another core member to help bring the 2017 album ‘Memorand’ to life, and to begin writing new material.  They scooped up recent Seattle transplant Jack and immediately got to work arranging, gigging and touring, culminating in a Summer 2018 West-Coast tour that brought them all the way to San Francisco and back home again.   
+					<br>
+					<br>
+					Now, Connor, Dave and Jack are shacked up in a basement in Seattle, surrounded by dusty, old amplifiers next to pristine computer chassis; analog circuits next to silicone chips; flickering candles next to blinking LEDs; vintage guitars leaning against cutting-edge synthesizers.  Monitor are working, working and working to bring new music to life. Continue to monitor Monitor: that new music might find you sooner than you think.
+				</p>
+			</div>
+		</section>
+		<section id="liveShows">
+			<div class="sectionMask">
+				<h2> Stay Tuned </h2>
+				<h3> Monitor is working hard on new music.  No upcoming performances scheduled. </h3>
+			</div>
+		</section>
+		<section id="press">
+			<div class="pressText">
+				<h2>Press</h2>
+				<div class="pressTextContainer">
+					<p>
+						“...the debut self-release by Seattle based experimental / alt rock duo MONITOR is a very rare creature. ... combines varied rock soundscapes with tender synth hooks and electronics in a sonic palette that charms and mystifies. It’s both a delicate, and at the same time intense and trippy odyssey that should make listeners appreciative of their depth and unique feel.”
+						<br>
+						&mdash; <b> Idioteq </b>
+					</p>
+					<p>
+						“Evoking an eerie, mysterious vibe much like Radiohead or The Antlers, the new song leaves a lasting impression that’s sure to haunt your dreams.”
+						<br>
+						 &mdash; <b> earBuddy </b>
+					</p>
+					<p>
+						“Graceful, steadied, intricate. [...] This track is perfect to relax to, but it’s also strangely amazing to dance to. Just imagine yourself in a calm trance – if you aren’t already there – and realize you can do anything with ‘Memorand’.”
+						<br>
+						&mdash; <b> Impose Magazine </b>
+					</p>
+				</div>
+			</div>
+			<div class="pressPhotoContainer">
+				<div class="pressPhoto">
+					<img src="Photos/2 - 1.jpg">
+				</div>
+			</div>
+		</section>
+		<section id="listen">
+			<h2> Listen now </h2>
+			<div class="listenContainer">
+				<div class="iframeContainer">
+					<iframe src="https://open.spotify.com/embed/album/1bwncptWjEQnjW0XFuDSyw&view=coverart" id="spotifyPlayer" height="380" frameborder="0" style="width:100%" allowtransparency="true" allow="encrypted-media"></iframe>
+					<iframe src="https://open.spotify.com/follow/1/?uri=spotify:artist:5OUfsZqqBlsVtWIzayDPF5&size=detail&theme=dark" id="spotifyFollow" width="300" height="56" scrolling="no" frameborder="0" style="border:none; padding:30px 0 30px 0; overflow:hidden;" allowtransparency="true"></iframe>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script>
+		var navBar = document.getElementById("navBar");
+		var menuButton = document.getElementById("menuButton");
+		var navLinkContainer = document.getElementById("navLinkContainer")
+		var isMobile = window.innerWidth < 768 ? true : false;
+		var fixedNav = window.innerHeight - 50;
+
+		if (isMobile) {
+			navLinkContainer.classList.remove("visible")
+			navBar.classList.add("fixedNav")
+			menuButton.classList.add("visible")
+		}
+
+		window.onscroll = function() {isFixed()};
+
+		function isFixed() {
+		  if (window.pageYOffset > fixedNav) {
+		    navBar.classList.add("fixedNav");
+		  } else {
+		    navBar.classList.remove("fixedNav");
+		  }
+		}
+
+		menuButton.addEventListener('click', (e)=> {
+			navLinkContainer.classList.add('visible')
+		})
+
+		let anchorlinks = document.querySelectorAll('a[href^="#"]')
+ 
+		for (let item of anchorlinks) { 
+		    item.addEventListener('click', (e)=> {
+		        let hashval = item.getAttribute('href');
+		        let target = document.querySelector(hashval);
+		        target.scrollIntoView({
+		            behavior: 'smooth',
+		            block: 'start'
+		        });
+		        history.replaceState(null, null, hashval);
+		        if (isMobile && navLinkContainer.classList.contains("visible")){
+		        	console.log("sup")
+		        	navLinkContainer.classList.remove("visible");
+		        }
+
+		        e.preventDefault();
+		    })
+		}
+	</script>
+</body>
+</html>
