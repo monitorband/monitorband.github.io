@@ -88,6 +88,7 @@ section {
 	padding-top: 0;
 	position: relative;
 	height: 100vh;
+	max-height:100vh;
 }
 
 .mainPageNav{
@@ -177,7 +178,7 @@ section {
 }
 
 #liveShows {
-	background-image: url("2 - 6.jpg");
+	background-image: url("Photos/2 - 6.jpg");
 	background-size: cover;
 }
 
