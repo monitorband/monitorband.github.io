@@ -1,0 +1,30 @@
+/*Formats the title screen background video effect*/
+
+#video {
+  position: absolute;
+  object-fit: fill;
+  z-index: 0;
+  height: calc(~"100vh - 50px");
+}
+
+#video-box {
+  width: 100vw;
+  height: calc(~"100vh - 50px");
+}
+
+#video-cover {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: calc(~"100vh - 50px");
+}
+
+#text-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: calc(~"100vh - 50px");
+  background-color: rgba(0, 0, 0, .4);
+}

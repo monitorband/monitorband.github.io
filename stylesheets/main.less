@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 25px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-weight: 100;
+ }
+
+h2 {
+  font-size: 35px;
+  font-weight: 100;
+}
+
+.media-bar {
+  animation-name: buttons-fade;
+  animation-duration: 11s;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1000;
+  box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
+  top: 0;
+  background-color: rgba(0,0,0,.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+
+  .site-nav {
+    font-size: 20px;
+    display: flex;
+    justify-content: flex-start;
+
+    span:hover {
+      cursor: pointer;
+    }
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: flex-end;
+
+    .facebook {
+      border: 1px solid #3b5998;
+      border-radius: 3px;
+      background-color: #3b5998;
+      padding-left: 12px;
+      padding-right: 4px;
+      padding-top: 2px;
+    }
+
+    .twitter {
+      color: #00b6f1;
+    }
+
+    .soundcloud {
+      color: #ff5500;
+    }
+  }
+
+  span {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute;
+    margin-top: 60px;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a{
+    padding: 12px 16px;
+    text-decoration: none;
+    cursor: hover;
+    display: block;
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-menu:hover .dropdown-menu {
+    cursor: pointer;
+}
+
+small-media-bar {
+  z-index: 0;
+}
+.footer {
+   position:fixed;
+   left:0px;
+   bottom:0px;
+   background-color: transparent;
+   color: red;
+}
+#navBar {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  #navButtons {
+
+  }
+
+}
+
+.list-title {
+  text-align: center;
+ }
+
+/*Landing Page*/
+
+.main-title {
+  animation-name: title-fade;
+  animation-duration: 11s;
+}
+
+.main-title-alternate {
+  color: transparent;
+}
+
+.templateContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#buttons-row {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  animation-name: buttons-fade;
+  animation-duration: 13s;
+
+  .button {
+    text-align: center;
+
+      :hover {
+        cursor: pointer;
+      };
+  }
+}
+
+
+.bottom-row {
+  z-index: 100;
+  color: red;
+}
+
+/*Performances and Propaganda Pages */
+
+.list-container {
+  margin-top: 10px;
+  width: 75%;
+  background-color: rgba(0, 0, 0, 0);
+  flex: 1;
+  padding: 5%;
+  border-radius: 4px;
+
+  h2 {
+
+  }
+
+}
+
+/*video box */
+/*Formats the title screen background video effect*/
+
+#video-large {
+  position: absolute;
+  object-fit: fill;
+  z-index: 0;
+  height: 100vh;
+  width: 100vw;
+}
+
+#video-small {
+  position: absolute;
+}
+
+#video-box {
+  width: 100vw;
+  height: 100vh;
+}
+
+#video-cover {
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+}
+
+#text-cover {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, .4);
+}
