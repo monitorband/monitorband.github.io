@@ -273,6 +273,10 @@ section {
 	display: block;
 }
 
+section {
+	height: auto;
+}
+
 #bioContainer{
 	width:100%;
 	padding: 0 15px 0 15px;
